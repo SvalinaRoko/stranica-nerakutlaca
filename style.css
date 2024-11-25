@@ -336,12 +336,38 @@ body {
   transition: all 500ms;
 }
 /* BOOK PROMOTION */
-.scroller--inner {
-  display: flex;
-  gap: 2rem;
+.scroller {
+  max-width: 100vw;
+  margin: 0 0 20rem 0;
 }
-.scroller--inner img:not(:last-child) {
-  margin-left: 2rem;
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    )
+    transparent;
+  mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+}
+.scroller[data-animated="true"] .scroller--inner {
+  width: fit-content;
+  flex-wrap: nowrap;
+  animation: scroll 40s linear infinite;
+}
+@keyframes scroll {
+  to {
+    transform: translate(-100%);
+  }
+}
+.scroller--inner {
+  flex-wrap: wrap;
+  /* padding: 2rem 0; */
+  padding-block: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 .scroller-img {
   width: 15%;

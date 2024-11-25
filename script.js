@@ -29,34 +29,25 @@ const observerHero = new IntersectionObserver(
   }
 );
 observerHero.observe(sectionHero);
-// TOP BUTTON
-const buttonFunction = document.querySelector(".section-hero");
-const observeButton = new IntersectionObserver(
-  function (parametar) {
-    const btn = parametar[0];
-    console.log(btn);
-    if (btn.isIntersecting === false)
-      document.querySelector(".top-button").classList.remove("none");
-    if (btn.isIntersecting)
-      document.querySelector(".top-button").classList.add("none");
-  },
-  { root: null, threshold: 0 }
-);
-observeButton.observe(buttonFunction);
-//
-const buttonFooter = document.querySelector(".section-footer");
-const observeFooter = new IntersectionObserver(
-  function (entry) {
-    const btnF = entry[0];
-    console.log(btnF);
-    if (btnF.isIntersecting === false)
-      document.querySelector(".top-button").classList.remove("none");
-    if (btnF.isIntersecting)
-      document.querySelector(".top-button").classList.add("none");
-  },
-  { root: null, threshold: 0 }
-);
-observeFooter.observe(buttonFooter);
+// BOOK PROMOTION
+const scrollers = document.querySelectorAll(".scroller");
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  addAnimation();
+}
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    scroller.setAttribute("data-animated", true);
+
+    const scrollerInner = scroller.querySelector(".scroller--inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+}
 // SMOOTH SCROLLING
 const allLinks = document.querySelectorAll("a:not(.btn-cta):not(.footer-link");
 console.log(allLinks);
