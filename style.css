@@ -340,9 +340,12 @@ body {
   display: flex;
   gap: 2rem;
 }
+.scroller--inner img:not(:last-child) {
+  margin-left: 2rem;
+}
 .scroller-img {
-  width: 38rem;
-  height: 53rem;
+  width: 15%;
+  height: 15%;
 }
 /* FOOTER SECTION */
 .container-footer {
