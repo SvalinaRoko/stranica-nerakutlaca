@@ -43,6 +43,7 @@ function addAnimation() {
 
     scrollerContent.forEach((item) => {
       const duplicatedItem = item.cloneNode(true);
+      console.log(duplicatedItem);
       duplicatedItem.setAttribute("aria-hidden", true);
       scrollerInner.appendChild(duplicatedItem);
     });
