@@ -350,11 +350,17 @@ body {
   -webkit-mask: linear-gradient(
     90deg,
     transparent,
-    white 20%,
-    white 80%,
+    #fbc895 10%,
+    #fbc895 90%,
     transparent
   );
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(
+    90deg,
+    transparent,
+    #fbc895 10%,
+    #fbc895 90%,
+    transparent
+  );
 }
 .scroller[data-animated="true"] .scroller--inner {
   width: max-content;
@@ -369,7 +375,7 @@ body {
   --_animation-direction: forwards;
 }
 .scroller[data-speed="slow"] {
-  --_animation-duration: 40s;
+  --_animation-duration: 70s;
 }
 .scroller[data-speed="fast"] {
   --_animation-duration: 20s;
@@ -389,7 +395,7 @@ body {
   width: 30rem;
   height: 100%;
 }
-.scroller--inner .scroller-img:not(#left-side) {
+.section-scroller-imgs .scroller-img:not(#left-side) {
   /* Used margin insted of gap */
   /* Gap dosen't work if wanted for first two images to be connected */
   margin-right: 1rem;

@@ -50,6 +50,11 @@
   .about-text {
     font-size: 2rem;
   }
+  /* SCROLLER IMAGES */
+  .scroller-img {
+    width: 25rem;
+    height: 100%;
+  }
   /* FOOTER SECTION */
   .site-map-box {
     display: none;
@@ -153,6 +158,15 @@
   .section-about-book {
     margin-bottom: 10rem;
   }
+  /* SCROLLER IMAGES */
+  .scroller-img {
+    width: 18rem;
+    height: 100%;
+  }
+  .scroller[data-animated="true"] {
+    -webkit-mask: linear-gradient(#fbc895 0%, #fbc895 100%);
+    mask: linear-gradient(#fbc895 0%, #fbc895 100%);
+  }
   /* CTA SECTION */
   .cta-container {
     height: 35rem;
@@ -220,6 +234,11 @@
     width: 30rem;
     padding: 0 1rem;
     text-align: center;
+  }
+  /* SCROLLER IMAGES */
+  .scroller-img {
+    width: 15rem;
+    height: 100%;
   }
   /* CTA SECTION */
   .cta-container {
