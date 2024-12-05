@@ -31,13 +31,14 @@
     text-align: center;
   }
   /* TESTIMONIALS SECTION */
-  .reviews {
+  /* TODO */
+  /* .reviews {
     flex-direction: column;
     align-items: center;
     gap: 8rem;
     padding: 0;
     margin: 10rem 0 20rem 0;
-  }
+  } */
   /* ABOUT AUTHOR SECTION */
   .section-about-author {
     grid-auto-flow: row;
