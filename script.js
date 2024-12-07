@@ -74,7 +74,43 @@ allLinks.forEach(function (link) {
   });
 });
 // CAROUSEL
+const carousel = document.querySelector(".reviews");
+const arrowBtns = document.querySelectorAll(".arrows");
+const firstReviewWidth = carousel.querySelector(".review").offsetWidth;
+const carouselChildrens = [...carousel.children];
 
+let reviewPerView = Math.round(carousel.offsetWidth / firstReviewWidth);
+
+carouselChildrens
+  .slice(-reviewPerView)
+  .reverse()
+  .forEach((card) => {
+    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+  });
+
+carouselChildrens.slice(0, reviewPerView).forEach((card) => {
+  carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+});
+
+arrowBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    carousel.scrollLeft +=
+      btn.id === "left" ? -firstReviewWidth : firstReviewWidth;
+  });
+});
+const infiniteScroll = () => {
+  if (carousel.scrollLeft === 0) {
+    carousel.classList.add("no-transition");
+    carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
+  } else if (
+    Math.ceil(carousel.scrollLeft) ===
+    carousel.scrollWidth - carousel.offsetWidth
+  ) {
+    carousel.classList.add("no-transition");
+    carousel.scrollLeft = carousel.offsetWidth;
+  }
+};
+carousel.addEventListener("scroll", infiniteScroll);
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
