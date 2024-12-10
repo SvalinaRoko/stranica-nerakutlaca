@@ -242,6 +242,7 @@ body {
   height: auto;
 }
 /* ILLUSTRATIONS */
+
 .shoe-illustration {
   width: 50%;
   height: auto;
@@ -361,7 +362,9 @@ body {
 .review-name {
   font-weight: 600;
 }
-
+.is-hidden {
+  display: none;
+}
 /* ABOUT AUTHOR SECTION */
 .section-about-author {
   max-width: 144rem;
