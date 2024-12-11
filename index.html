@@ -29,7 +29,7 @@
       defer
       src=" https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
-    <script defer src="/script.js"></script>
+
     <title>Nera Kutlača &dash; Energija Djetetove prošlosti</title>
   </head>
   <body>
@@ -223,9 +223,10 @@
           <h2 class="heading-secondary">Iskustva čitatelja</h2>
           <!-- TODO -->
           <!-- Corousel not finished-->
+          <!-- Have to add removing arrows -->
           <div class="carousel-container">
             <div class="carousel">
-              <i class="arrows is-hidden" id="left"
+              <i class="arrows" id="left"
                 ><svg
                   class="arrow--left"
                   xmlns="http://www.w3.org/2000/svg"
@@ -561,6 +562,21 @@
           </div>
         </div>
       </div>
+      <!-- TODO -->
+      <!-- MAP SECTION -->
+      <section class="locations-section">
+        <h2 class="map-heading">Uskoro na ovim lokacijama&excl;</h2>
+        <p>
+          U suradnji sa knjižarama Hoću knjigu knjiga Energija djetetove
+          proslosti dolazi i u Vas grad.
+        </p>
+
+        <div class="map-container">
+          <div class="wavy-background">
+            <div id="map"></div>
+          </div>
+        </div>
+      </section>
       <!-- CTA SECTION -->
       <div class="cta-container center">
         <label class="text-labels">Zvuči zanimljivo&quest;</label>
@@ -667,5 +683,10 @@
         </p>
       </section>
     </footer>
+    <script defer src="/script.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLsomQYUmTtvaGiMHBlExnPDJnB7Dws3k&loading=async&libraries=maps&v=beta&callback=initMap"
+      defer
+    ></script>
   </body>
 </html>

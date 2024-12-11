@@ -461,6 +461,38 @@ body {
   /* Gap dosen't work if wanted for first two images to be connected */
   margin-right: 1rem;
 }
+/* MAP SECTION */
+.map-container {
+  width: 100vw;
+  margin-bottom: 20rem;
+}
+.hocu-knjigu-logo {
+  width: 20rem;
+  height: 50rem;
+}
+#map {
+  height: 90%;
+  width: 50%;
+  margin: auto auto;
+}
+.wavy-background {
+  width: 100vw;
+  height: 70rem;
+  /* background-color: #e2b486; */
+  /* background: linear-gradient(90deg, #ffdcb9, #f9f3df, #f9f3df, #cacde586); */
+
+  /* --mask: radial-gradient(17.12px at 50% 23.25px, #000 99%, #0000 101%)
+      calc(50% - 30px) 0/60px 51% repeat-x,
+    radial-gradient(17.12px at 50% -8.25px, #0000 99%, #000 101%) 50% 15px/60px
+      calc(51% - 15px) repeat-x,
+    radial-gradient(17.12px at 50% calc(100% - 23.25px), #000 99%, #0000 101%)
+      calc(50% - 30px) 100%/60px 51% repeat-x,
+    radial-gradient(17.12px at 50% calc(100% + 8.25px), #0000 99%, #000 101%)
+      50% calc(100% - 15px) / 60px calc(51% - 15px) repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+} */
+}
 /* FOOTER SECTION */
 .container-footer {
   justify-items: center;
