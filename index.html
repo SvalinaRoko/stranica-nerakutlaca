@@ -37,11 +37,15 @@
     <header class="header-section">
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#aboutBook">O knjizi</a></li>
+          <li>
+            <a class="main-nav-link" href="#aboutBook">O knjizi</a>
+          </li>
           <li>
             <a class="main-nav-link" href="#testimonials">Recenzije</a>
           </li>
           <li><a class="main-nav-link" href="#aboutAuthor">O autorici</a></li>
+          <li><a class="main-nav-link" href="#promotion">Promocija</a></li>
+          <li><a class="main-nav-link" href="#locations">Gdje kupiti?</a></li>
           <li><a class="main-nav-link" href="#contact">Kontakt</a></li>
           <li>
             <a
@@ -54,9 +58,12 @@
         </ul>
       </nav>
       <!-- MOBILE NAVIGATION -->
-      <button class="no-select-img btn-mobile-nav">
+      <button
+        class="mobile-navigation-button no-select-img"
+        aria-label="dropdown menu button"
+      >
         <svg
-          class="icon-mobile-nav"
+          class="icon-mobile-nav menu-outline"
           name="menu-outline"
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -69,7 +76,7 @@
           ></path>
         </svg>
         <svg
-          class="icon-mobile-nav"
+          class="icon-mobile-nav close-outline"
           name="close-outline"
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -102,38 +109,43 @@
             >
           </div>
         </div>
-        <div class="no-select-img hero-img grid grid--3-cols">
-          <picture class="grid">
-            <source
-              srcset="./Images/Mockup/book(dark).webp"
-              type="image/webp"
-            />
-            <source srcset="./Images/Mockup/book(dark).png" type="image/png" />
-            <img
-              class="mockup"
-              src="./Images/Mockup/book(dark).png"
-              alt="Mockup of the book Energija djetetove prošlosti"
-              width="951"
-              height="1196"
-            />
-          </picture>
-          <div class="hero-img-left">
-            <img
-              class="left-img"
-              src="./Images/Illustrations/FromBook/9.1.png"
-              alt="A illustration from the book Energija djetetove prošlosti"
-              width="951"
-              height="1195"
-            />
-          </div>
-          <div class="hero-img-right">
-            <img
-              class="right-img"
-              src="./Images/Illustrations/FromBook/31.1.png"
-              alt="A illustration from the book Energija djetetove prošlosti"
-              width="634"
-              height="492"
-            />
+        <div class="no-select-img hero-img">
+          <div class="hero-img-grid grid grid--3-cols">
+            <div class="hero-img-left">
+              <img
+                class="left-img"
+                src="./Images/Illustrations/FromBook/9.1.png"
+                alt="A illustration from the book Energija djetetove prošlosti"
+                width="1270"
+                height="1245"
+              />
+            </div>
+            <picture class="grid">
+              <source
+                srcset="./Images/Mockup/book(dark).webp"
+                type="image/webp"
+              />
+              <source
+                srcset="./Images/Mockup/book(dark).png"
+                type="image/png"
+              />
+              <img
+                class="mockup"
+                src="./Images/Mockup/book(dark).webp"
+                alt="Mockup of the book Energija djetetove prošlosti"
+                width="1525"
+                height="1916"
+              />
+            </picture>
+            <div class="hero-img-right">
+              <img
+                class="right-img"
+                src="./Images/Illustrations/FromBook/31.1.png"
+                alt="A illustration from the book Energija djetetove prošlosti"
+                width="1222"
+                height="1418"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -167,8 +179,8 @@
                 class="no-select-img top-woman-img"
                 src="./Images/Illustrations/Woman/Top-woman.png"
                 alt="Line art of a woman looking into the sky"
-                width="504"
-                height="635"
+                width="1010"
+                height="1272"
               />
             </picture>
           </div>
@@ -187,8 +199,8 @@
                 class="no-select-img dancing-woman"
                 src="./Images/Illustrations/Woman/Blue-woman.png"
                 alt="Line art of a woman dancing in a blue dress"
-                width="504"
-                height="635"
+                width="1010"
+                height="1272"
               />
             </picture>
           </div>
@@ -209,7 +221,7 @@
       </section>
       <div class="no-select-img grid grid--2-cols">
         <img
-          class="shoe-illustration"
+          class="shoe-illustration hide"
           src="./Images/Illustrations/FromBook/31.2.png"
           alt="Illustration of a flower inside of shoe"
           alt=""
@@ -222,8 +234,8 @@
         <div class="testimonials-container center">
           <h2 class="heading-secondary">Iskustva čitatelja</h2>
           <!-- TODO -->
-          <!-- Corousel not finished-->
-          <!-- Have to add removing arrows -->
+          <!-- Make new design of carousel -->
+          <!-- https://www.youtube.com/watch?v=HkhbPtN6dag&t=143s -->
           <div class="carousel-container">
             <div class="carousel">
               <i class="arrows" id="left"
@@ -242,17 +254,26 @@
               </i>
               <ul class="reviews">
                 <li class="review">
+                  <!-- <img
+                    class="review-img"
+                    src="/Images/Testimonials/Roko.png"
+                    alt=""
+                  /> -->
                   <blockquote class="review-text">
                     Topla preporuka svima koji trebaju podršku, prolaze kroz
                     teške trenutke ili im nedostaje samopouzdanja. Knjiga
                     izvlači najbolje iz nas i pruža oslonac onima koji tek kreću
-                    na životni put. Prepoznatljivi Matisseov "Dance" na
-                    naslovnici odmah me privukao. Prepuna je emocija, radosti i
-                    ljubavi. Osjećao sam se kao da proživljavam cijelu priču.
+                    na životni put. Prepuna je emocija, radosti i ljubavi.
+                    Osjećao sam se kao da proživljavam cijelu priču.
                   </blockquote>
                   <span class="review-name">&mdash;Tomislav (21)</span>
                 </li>
                 <li class="review">
+                  <!-- <img
+                    class="review-img"
+                    src="/Images/Testimonials/Roko.png"
+                    alt=""
+                  /> -->
                   <blockquote class="review-text">
                     Donosi preokret za svakog čitatelja, naravno, sve ovisi o
                     tome kakva vam je duša. Knjiga, iako naizgled mala, VELIKA
@@ -267,24 +288,44 @@
                   <blockquote class="review-text">
                     Tvoje rečenice su sve što trebaš reći. Sve ostalo ne može se
                     napisati bolje i bilo bi nepotrebno prenemaganje.
-                    Demantiralo bi tebe. Bila bi to demagogija.
+                    Demantiralo bi tebe. Bila bi to demagogija.<br />
+                    <span class="review-name">&mdash;Sonja Krvavica</span>
                   </blockquote>
-                  <span class="review-name">&mdash;Sonja Krvavica</span>
                 </li>
                 <li class="review">
+                  <!-- <img
+                    class="review-img"
+                    src="/Images/Testimonials/Prokurator.png"
+                    alt=""
+                  /> -->
                   <blockquote class="review-text">
-                    Lorem ipsum dolor sit amet.
+                    Draga Nera, Sigurno mogu reci da si kod mene kao citatelja
+                    svaki marketinski element AIDA modela postigla. Osjetila sam
+                    osjecaj zahvalnosti nakon pročitanog na tvojoj hrabrosti,
+                    iskrenosti i razbijanju predrasuda o danasnjim mladima i<br />
+                    da im za sreću ne treba puno...nego samo ljubav...i to ...da
+                    jedva čekam još...novu knjigu.
                   </blockquote>
-                  <span class="review-name">&mdash;Ante</span>
+
+                  <span class="review-name">&mdash;Prokurator</span>
                 </li>
                 <li class="review">
+                  <!-- <img
+                    class="review-img"
+                    src="/Images/Testimonials/Roko.png"
+                    alt=""
+                  /> -->
                   <blockquote class="review-text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Cupiditate, in!
+                    Knjiga za svako doba u životu.
                   </blockquote>
                   <span class="review-name">&mdash;Stipe</span>
                 </li>
                 <li class="review">
+                  <!-- <img
+                    class="review-img"
+                    src="/Images/Testimonials/Roko.png"
+                    alt=""
+                  /> -->
                   <blockquote class="review-text">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Amet pariatur, nihil rem praesentium ex debitis quas saepe
@@ -313,14 +354,14 @@
       </section>
       <div class="no-select-img grid grid--2-cols">
         <img
-          class="heart-illustration"
+          class="heart-illustration hide"
           src="./Images/Illustrations/FromBook/12.1.png"
           alt="Illustration of a rose inside a heart dripping in a wine glass "
           width="190"
           height="331"
         />
         <img
-          class="steps-illustration"
+          class="steps-illustration hide"
           src="./Images/Illustrations/FromBook/21,1.png"
           alt="Illustration of a steps with words"
           width="476"
@@ -355,234 +396,271 @@
         </div>
       </section>
       <!-- BOOK PROMOTION -->
-      <div class="no-select-img section-scroller-imgs">
-        <div class="scroller" data-direction="right" data-speed="slow">
-          <div class="scroller--inner">
-            <!-- Images final -->
-            <!-- Use larger image size then resize in css -->
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/grupna-1.webp"
-              alt="Author Nera Kutlaca with her readers after the promotion"
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/grupna-2.webp"
-              alt=" Author Nera Kutlaca with her readers after the promotion"
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/grupna-3.webp"
-              alt="Author Nera Kutlaca with her readers after the promotion "
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/grupna-4.webp"
-              alt=" Author Nera Kutlaca with her readers after the promotion"
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/grupna-6.webp"
-              alt=" Author Nera Kutlaca with her readers after the promotion"
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/grupna-7.webp"
-              alt="Author Nera Kutlaca with her readers after the promotion "
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/grupna-5.webp"
-              alt=" Author Nera Kutlaca with her readers after the promotion"
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/neraIKnjiga-1.webp"
-              alt="Author Nera Kutlaca  "
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/lektorica-1.webp"
-              alt=" Author Nera Kutlaca with her readers after the promotion"
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/posveta-2.webp"
-              alt="Author Nera Kutlaca signs her book and writes a dedication to one of her readers "
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/posveta-3.webp"
-              alt="Author Nera Kutlaca signs her book and writes a dedication to one of her readers "
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/knjige.webp"
-              alt="Pile of Energija djetetove proslosti books"
-              width="770"
-              height="1150"
-            />
+      <section class="section-book-promotion" id="promotion">
+        <h2 class="heading-secondary">Promocija knjige</h2>
+        <div class="no-select-img section-scroller-imgs">
+          <div class="scroller" data-direction="right" data-speed="slow">
+            <div class="scroller--inner">
+              <!-- Images final -->
+              <!-- Use larger image size then resize in css -->
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/grupna-1.webp"
+                alt="Author Nera Kutlaca with her readers after the promotion"
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/grupna-2.webp"
+                alt=" Author Nera Kutlaca with her readers after the promotion"
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/grupna-3.webp"
+                alt="Author Nera Kutlaca with her readers after the promotion "
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/grupna-4.webp"
+                alt=" Author Nera Kutlaca with her readers after the promotion"
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/grupna-6.webp"
+                alt=" Author Nera Kutlaca with her readers after the promotion"
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/grupna-7.webp"
+                alt="Author Nera Kutlaca with her readers after the promotion "
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/grupna-5.webp"
+                alt=" Author Nera Kutlaca with her readers after the promotion"
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/neraIKnjiga-1.webp"
+                alt="Author Nera Kutlaca  "
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/lektorica-1.webp"
+                alt=" Author Nera Kutlaca with her readers after the promotion"
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/posveta-2.webp"
+                alt="Author Nera Kutlaca signs her book and writes a dedication to one of her readers "
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/posveta-3.webp"
+                alt="Author Nera Kutlaca signs her book and writes a dedication to one of her readers "
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/knjige.webp"
+                alt="Pile of Energija djetetove proslosti books"
+                width="770"
+                height="1150"
+              />
+            </div>
           </div>
-        </div>
-        <div class="scroller" data-direction="left" data-speed="slow">
-          <div class="scroller--inner">
-            <!-- Images final -->
-            <!-- Use larger image size then resize in css -->
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/nera-1.webp"
-              alt="Author Nera Kutlaca presents her book at the promotion "
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/lektorica-2.webp"
-              alt=" Older woman with microphone talking with Nera at her book promotion"
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/publika-4.webp"
-              alt="Close up of croud listening to Nera speak  "
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/publika-6.webp"
-              alt="Close up of croud listening to Nera speak "
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/neraIPublika-2.webp"
-              alt="Author Nera Kutlaca presents her book at the promotion  "
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              id="left-side"
-              src="./Images/sliderSlike/Resized/WEBp/publikaLijevaStrana-1.webp"
-              alt=" Wide shot of the promotion room and the croud"
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              id="right-side"
-              src="./Images/sliderSlike/Resized/WEBp/publikaDesnaStrana-2.webp"
-              alt="Wide shot of the promotion room and the croud "
-              width="770"
-              height="1150"
-            />
+          <div class="scroller" data-direction="left" data-speed="slow">
+            <div class="scroller--inner">
+              <!-- Images final -->
+              <!-- Use larger image size then resize in css -->
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/nera-1.webp"
+                alt="Author Nera Kutlaca presents her book at the promotion "
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/lektorica-2.webp"
+                alt=" Older woman with microphone talking with Nera at her book promotion"
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/publika-4.webp"
+                alt="Close up of croud listening to Nera speak  "
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/publika-6.webp"
+                alt="Close up of croud listening to Nera speak "
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/neraIPublika-2.webp"
+                alt="Author Nera Kutlaca presents her book at the promotion  "
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                id="left-side"
+                src="./Images/sliderSlike/Resized/WEBp/publikaLijevaStrana-1.webp"
+                alt=" Wide shot of the promotion room and the croud"
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                id="right-side"
+                src="./Images/sliderSlike/Resized/WEBp/publikaDesnaStrana-2.webp"
+                alt="Wide shot of the promotion room and the croud "
+                width="770"
+                height="1150"
+              />
 
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/neraCitanje-3.webp"
-              alt="Author Nera Kutlaca presents her book at the promotion "
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/publikaPovezi-1.webp"
-              alt="People listening to Nera reading her book while blindfolded   "
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/publikaPovezi-2.webp"
-              alt="People listening to Nera reading her book while blindfolded "
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/plac.webp"
-              alt="Man crying at Nera's book promotion"
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/publika-7.webp"
-              alt="Crowd applauding at the book promotion "
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/publikaApplauses-1.webp"
-              alt=" Crowd applauding at the book promotion"
-              width="770"
-              height="1150"
-            />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/neraCitanje-3.webp"
+                alt="Author Nera Kutlaca presents her book at the promotion "
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/publikaPovezi-1.webp"
+                alt="People listening to Nera reading her book while blindfolded   "
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/publikaPovezi-2.webp"
+                alt="People listening to Nera reading her book while blindfolded "
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/plac.webp"
+                alt="Man crying at Nera's book promotion"
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/publika-7.webp"
+                alt="Crowd applauding at the book promotion "
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/publikaApplauses-1.webp"
+                alt=" Crowd applauding at the book promotion"
+                width="770"
+                height="1150"
+              />
 
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/oprema-1.webp"
-              alt=" Picture of laptop and equipment"
-              width="770"
-              height="1150"
-            />
-            <img
-              class="scroller-img"
-              src="./Images/sliderSlike/Resized/WEBp/oprema-2.webp"
-              alt=" Picture of camera and equipment"
-              width="770"
-              height="1150"
-            />
-          </div>
-        </div>
-      </div>
-      <!-- TODO -->
-      <!-- MAP SECTION -->
-      <section class="locations-section">
-        <div class="map-text-container">
-          <h2 class="map-heading">Uskoro na ovim lokacijama&excl;</h2>
-          <p class="map-text--paragraf">
-            U suradnji sa knjižarskim lanacem
-            <a
-              href="https://www.hocuknjigu.hr/o-nama"
-              target="_blank"
-              rel="noreferrer"
-              >Hoću knjigu.</a
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/oprema-1.webp"
+                alt=" Picture of laptop and equipment"
+                width="770"
+                height="1150"
+              />
+              <img
+                class="scroller-img"
+                src="./Images/sliderSlike/Resized/WEBp/oprema-2.webp"
+                alt=" Picture of camera and equipment"
+                width="770"
+                height="1150"
+              />
+            </div>
+            <span class="book-promotion-location"
+              >Lokacija&#8282; Gradska knjižnica Marka Marulića u Splitu</span
             >
+          </div>
+        </div>
+      </section>
+      <!-- TODO -->
+      <!--Make it responsive -->
+      <!-- MAP SECTION -->
+      <section class="locations-section" id="locations">
+        <div class="map-text-container">
+          <h2 class="heading-secondary">
+            Sad dostupna u knjižari <br />blizu Vas&excl;
+          </h2>
+          <p class="map-text--paragraf">
+            U suradnji sa knjižarskim lanacem Hoću knjigu.
             <br />Knjiga Energija djetetove prošlosti
-            <strong>dolazi i u Vaš grad</strong>.<br />
+            <strong>dolazi i u Vaš grad&excl;</strong>.<br />Uz to što su knjige
+            dostupne na stranicama
+            <a
+              href="https://webknjizara.hr/proizvod/energija-djetetove-proslosti-nera-kutlaca/"
+              target="_blank"
+              >Redak</a
+            >
+            i
+            <a
+              href="https://www.hocuknjigu.hr/proizvodi/knjige/publicistika/popularna-psihologija/energija-djetetove-proslosti"
+              target="_blank"
+            >
+              Hoću knjigu.</a
+            ><br />
+            Sad su i na jedanaest lokacija po cijeloj hrvatskoj.<br />
             Pronađite lokaciju najbližu Vama!
           </p>
         </div>
 
         <div class="map-container">
-          <div id="map"></div>
+          <div
+            class="map"
+            id="map"
+            aria-label="Google map with locations of bookstores across Croatia"
+            role="application"
+          ></div>
+          <img
+            class="map--illustration no-select-img hide"
+            src="./Images/Illustrations/FromBook/30.png"
+            alt="Illustration from
+  book Energija djetetove proslosti"
+            width="638"
+            height="860"
+          />
+          <img
+            class="logo--hocu-knjigu no-select-img hide"
+            src="./Images/Hocu-knjigu-logo/Logo-brush.png"
+            alt="Hocu knjigu logo"
+            width="415"
+            height="529"
+          />
         </div>
       </section>
       <!-- CTA SECTION -->
@@ -680,6 +758,20 @@
                   href="#aboutAuthor"
                   aria-label="Bring user to the about author section of the page"
                   >O autorici</a
+                >
+              </li>
+              <li class="site-map-item">
+                <a
+                  href="#promotion"
+                  aria-label="Bring user to the about author section of the page"
+                  >Promocija</a
+                >
+              </li>
+              <li class="site-map-item">
+                <a
+                  href="#locations"
+                  aria-label="Bring user to the about author section of the page"
+                  >Gdje kupiti?</a
                 >
               </li>
             </ul>

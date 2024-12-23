@@ -5,10 +5,10 @@
 }
 .heading-secondary {
   font-size: 4.8rem;
-  color: #2b509c;
+  color: #1a305e;
   line-height: 5.8rem;
   margin-bottom: 2rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 .grid {
   display: grid;

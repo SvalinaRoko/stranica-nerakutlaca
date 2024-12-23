@@ -6,6 +6,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-padding-top: 8rem;
 }
 body {
   background-color: #f9f3df;
@@ -13,13 +14,21 @@ body {
   font-family: "Eczar", serif;
   font-weight: 400;
   font-size: 1.8rem;
-  /* max-width: 100vw; */
+  max-width: 100vw;
   min-width: 100vw;
   margin: 0 auto;
   overflow-x: hidden;
 }
 
 /* NAVIGATION */
+.scroll-disabled {
+  overflow: hidden;
+  position: fixed;
+}
+.scroll-enable {
+  overflow: unset;
+  position: static;
+}
 .header-section {
   display: flex;
   justify-content: space-between;
@@ -34,7 +43,6 @@ body {
   align-items: center;
   gap: 3rem;
 }
-
 .main-nav-link:link,
 .main-nav-link:visited {
   display: inline-block;
@@ -66,7 +74,7 @@ body {
 }
 
 /* MOBILE NAVIGATION */
-.btn-mobile-nav {
+.mobile-navigation-button {
   border: none;
   background: none;
   cursor: pointer;
@@ -82,22 +90,23 @@ body {
 .icon-mobile-nav[name="close-outline"] {
   display: none;
 }
+
 /* STICKY NAVIGATION */
 .sticky .header-section {
   position: fixed;
   top: 0;
   bottom: 0;
   width: 100%;
+  height: 8rem;
   background-color: rgba(254, 244, 234, 0.7);
   z-index: 999;
-  height: 8rem;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 .sticky .section-hero {
   margin-top: 11.3rem;
 }
+
 /* HERO SECTION*/
 .section-hero {
   position: relative;
@@ -128,23 +137,32 @@ body {
   line-height: 3rem;
 }
 .hero-img {
-  align-items: center;
-  justify-items: center;
   background-color: #fbc895;
 }
 .hero-img picture {
   grid-area: 1/-3;
   z-index: 2;
 }
+.hero-img-grid {
+  align-items: center;
+  justify-items: center;
+}
+
 .mockup {
   justify-self: center;
   width: 150%;
   height: auto;
+  position: relative;
 }
-.test {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  width: 100%;
+.mockup::before {
+  content: "16";
+  width: 10rem;
+  height: 10rem;
+  background-color: #1a305e;
+  color: #af4f2c;
+  top: 30rem;
+  left: 60rem;
+  position: absolute;
 }
 .left-img,
 .right-img {
@@ -155,6 +173,7 @@ body {
 .left-img {
   transform: translateX(-3rem);
 }
+
 /* TOP BUTTON */
 
 .top-button {
@@ -187,7 +206,7 @@ body {
 }
 
 /* ABOUT BOOK SECTION */
-.section-about-book {
+.about-book-container {
   max-width: 144rem;
   margin: 20rem auto 0 auto;
 }
@@ -195,6 +214,10 @@ body {
   width: 42.5rem;
   align-self: center;
   justify-self: center;
+  margin-bottom: 0rem;
+}
+.about-book-container .step-text-box:first-child {
+  margin-bottom: 20rem;
 }
 .step-1-img-box,
 .step-1-img-box picture,
@@ -234,7 +257,7 @@ body {
   z-index: -2;
 }
 .top-woman-img {
-  width: 70%;
+  width: 60%;
   height: auto;
 }
 .dancing-woman {
@@ -244,26 +267,28 @@ body {
 /* ILLUSTRATIONS */
 
 .shoe-illustration {
-  width: 50%;
+  width: 40rem;
   height: auto;
   grid-column-start: 2;
   grid-column-end: -1;
   justify-self: end;
   align-self: end;
+  margin-right: 5rem;
 }
 .heart-illustration {
-  width: 20%;
+  width: 18rem;
   height: auto;
   transform: rotate(-10deg);
   margin-left: 2rem;
 }
 .steps-illustration {
-  width: 50%;
+  width: 50rem;
   height: auto;
   justify-self: end;
   align-self: end;
 }
 /* TODO */
+/* Add picture to testimonials */
 /* TESTIMONIALS SECTION */
 .testimonials-container .heading-secondary {
   text-align: center;
@@ -316,9 +341,11 @@ body {
   justify-items: center;
   grid-auto-columns: calc((100% / 3) - 1.2rem);
   gap: 2rem;
+  min-height: auto;
+  padding: 2rem 0;
 
   overflow-x: hidden;
-  overflow-x: auto;
+
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
@@ -336,20 +363,37 @@ body {
   list-style: none;
 
   border-radius: 10rem 10rem 10rem 10rem;
+  box-shadow: inset #fff 0 0 0 4px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 10px 10px;
 
   scroll-snap-align: center;
+  position: relative;
+
+  /* Replaced display grid with flex */
 
   text-align: center;
   display: flex;
+  /* grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr); */
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
-}
-.review:hover,
-.review:active {
-  box-shadow: inset #fff 0 0 0 7px;
+  align-items: center;
+  /* justify-items: center; */
 }
 
+.review-img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  border: solid 3px #fff;
+  position: absolute;
+  top: -7rem;
+  align-self: start;
+  margin-top: 2rem;
+}
 .arrows {
   z-index: 100;
 }
@@ -382,26 +426,19 @@ body {
 .author-img {
   height: auto;
 }
-/* CTA SECTION*/
-.cta-container {
-  height: 30rem;
-  background-color: #fbc895;
-  text-align: center;
-  padding: 3em 0;
-  border-radius: 50%;
-  margin-bottom: 20rem !important;
-}
-.btn-cta:hover,
-.btn-cta:active {
-  background-color: #1a305e;
-  transition: all 500ms;
-}
+
 /* BOOK PROMOTION */
+.section-book-promotion .heading-secondary {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto 3rem auto;
+}
 .section-scroller-imgs .scroller:not(:first-child) {
   margin-bottom: 20rem;
 }
 .scroller {
   max-width: 100vw;
+  text-align: center;
 }
 .scroller .scroller--inner:not(:first-child) {
   margin-bottom: 20rem;
@@ -455,6 +492,7 @@ body {
 .scroller-img {
   width: 30rem;
   height: 100%;
+  box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.05);
 }
 .scroller-img:not(#right-side, #left-side) {
   border-radius: 2rem;
@@ -470,12 +508,17 @@ body {
   /* Gap dosen't work if wanted for first two images to be connected */
   margin-right: 1rem;
 }
+
+.book-promotion-location {
+  color: rgba(0, 0, 0, 0.8);
+}
 /* MAP SECTION */
 .map-text-container {
   text-align: center;
   margin: 0 auto;
-  width: 53rem;
+  padding: 1rem;
 }
+
 .map-text--paragraf a {
   color: #af4f2c;
   text-decoration: underline;
@@ -484,24 +527,55 @@ body {
 .map-text--paragraf a:active {
   color: #1a305e;
   cursor: pointer;
+  z-index: 10; /* Ensures the link is above other elements */
+  pointer-events: auto; /* Ensures the link is clickable */
 }
-.map-heading {
-  font-weight: bold;
-  font-size: 4rem;
-  line-height: 6rem;
-  margin-bottom: 2rem;
-}
+
 .map-container {
   width: 100vw;
   height: 70rem;
-  margin: 4rem 0 20rem 0;
+  margin: 4rem 0 10rem 0;
+  position: relative;
 }
 
+.logo--hocu-knjigu {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  z-index: -10;
+  rotate: 10deg;
+  top: 30rem;
+  right: 3rem;
+}
+
+.map--illustration {
+  position: absolute;
+  left: 5rem;
+  top: -25rem;
+  rotate: 10deg;
+  width: 20%;
+  z-index: -10;
+  height: auto;
+}
 #map {
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.3);
   height: 90%;
   width: 50%;
   margin: 0 auto;
   border-radius: 1rem;
+}
+/* CTA SECTION*/
+.cta-container {
+  background-color: #fbc895;
+  text-align: center;
+  padding: 3em 0;
+  border-radius: 50%;
+  margin-bottom: 20rem !important;
+}
+.btn-cta:hover,
+.btn-cta:active {
+  background-color: #1a305e;
+  transition: all 500ms;
 }
 /* FOOTER SECTION */
 .container-footer {
