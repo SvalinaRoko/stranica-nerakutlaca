@@ -7,6 +7,7 @@
   .main-nav-list {
     gap: 0.5rem;
     flex-wrap: wrap;
+
     justify-content: center;
   }
   .sticky .header-section {
@@ -126,7 +127,7 @@
   }
   .main-nav-list {
     flex-direction: column;
-    gap: 4.8rem;
+    gap: 2rem;
   }
 
   .main-nav-link:link,
@@ -284,7 +285,7 @@
     font-weight: 500;
     font-size: 1.4rem;
   }
-  /* ABOUT AUTHOR SECTION */
+  /* ABOUT AUTHOR SECTION  */
 
   .text-box {
     width: 30rem;
@@ -303,7 +304,9 @@
   /* MAP SECTION  */
 
   /* CTA SECTION */
-
+  .cta-container .heading-secondary {
+    font-size: 4rem;
+  }
   /* FOOTER SECTION */
   .get-in-touch-box {
     padding: 0;

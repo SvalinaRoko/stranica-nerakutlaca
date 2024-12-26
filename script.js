@@ -124,7 +124,6 @@ arrowBtns.forEach((btn) => {
 // TODO
 // removing and adding arrows
 // MAP SECTION
-
 let map;
 
 const croatiaLatLng = { lat: 44.76843149597141, lng: 16.821158701981076 };
@@ -307,7 +306,7 @@ async function initMap() {
       content: pinSvg,
     });
 
-    marker.addEventListener("click", () => {
+    marker.addEventListener("gmp-click", () => {
       infoWindow.close();
       infoWindow.setContent(
         `<div><strong>${markers[i].locationName}</strong><br>${markers[i].address}<br>${markers[i].workingHours}</div>`
