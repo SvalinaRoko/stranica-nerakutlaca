@@ -205,7 +205,9 @@
     -webkit-mask: linear-gradient(#fbc895 0%, #fbc895 100%);
     mask: linear-gradient(#fbc895 0%, #fbc895 100%);
   }
-
+  .scroller[data-speed="slow"] {
+    --_animation-duration: 140s;
+  }
   /* TESTIMONIALS */
   .reviews {
     grid-auto-columns: 100%;

@@ -67,20 +67,6 @@ const observerHero = new IntersectionObserver(
 observerHero.observe(sectionHero);
 // BOOK PROMOTION IMG SLIDER
 const scrollers = document.querySelectorAll(".scroller");
-
-if (
-  !window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
-  window.matchMedia("(max-width: 768px)").matches
-) {
-  addAnimation();
-} else {
-  addAnimation();
-  if (window.matchMedia("(max-width: 768px)").matches) {
-    scrollers.forEach((scroller) => {
-      scroller.setAttribute("data-speed", "ExtraSlow");
-    });
-  }
-}
 function addAnimation() {
   scrollers.forEach((scroller) => {
     scroller.setAttribute("data-animated", true);
@@ -95,6 +81,7 @@ function addAnimation() {
     });
   });
 }
+addAnimation();
 // SMOOTH SCROLLING
 const allLinks = document.querySelectorAll("a:not(.btn-cta):not(.footer-link");
 console.log(allLinks);
