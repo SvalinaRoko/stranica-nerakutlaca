@@ -68,13 +68,18 @@ observerHero.observe(sectionHero);
 // BOOK PROMOTION IMG SLIDER
 const scrollers = document.querySelectorAll(".scroller");
 
-if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+if (
+  !window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+  window.matchMedia("(max-width: 768px)").matches
+) {
   addAnimation();
 } else {
   addAnimation();
-  scrollers.forEach((scroller) => {
-    scroller.setAttribute("data-speed", "ExtraSlow");
-  });
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    scrollers.forEach((scroller) => {
+      scroller.setAttribute("data-speed", "ExtraSlow");
+    });
+  }
 }
 function addAnimation() {
   scrollers.forEach((scroller) => {

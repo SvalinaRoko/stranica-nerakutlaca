@@ -477,7 +477,7 @@ body {
   --_animation-duration: 70s;
 }
 .scroller[data-speed="ExtraSlow"] {
-  --_animation-duration: 140s;
+  --_animation-duration: 500s;
 }
 .scroller[data-speed="fast"] {
   --_animation-duration: 20s;
