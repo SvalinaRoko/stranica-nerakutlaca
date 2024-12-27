@@ -67,8 +67,14 @@ const observerHero = new IntersectionObserver(
 observerHero.observe(sectionHero);
 // BOOK PROMOTION IMG SLIDER
 const scrollers = document.querySelectorAll(".scroller");
+
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   addAnimation();
+} else {
+  addAnimation();
+  scrollers.forEach((scroller) => {
+    scroller.setAttribute("data-speed", "ExtraSlow");
+  });
 }
 function addAnimation() {
   scrollers.forEach((scroller) => {
