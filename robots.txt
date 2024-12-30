@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /Images/sliderSlike/Resized/WEBp/publikaDesnaStrana-2.webp
+Disallow: /Images/sliderSlike/Resized/publikaLijevaStrana-1.png
+Disallow: /Images/sliderSlike/Resized/nera-1.png
+Disallow: /Images/Hocu-knjigu-logo/Logo-brush.png
