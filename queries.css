@@ -86,25 +86,11 @@
     /* temp */
     margin-right: 1rem;
   }
-  .bill-board {
-    margin: 10rem 0;
+  /* BB */
+  .bb-img {
+    width: 85%;
   }
-  .bb--img {
-    border-radius: 1rem;
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.03);
-    border: #cacde5 solid 0.5rem;
 
-    width: 80%;
-  }
-  .bb-location {
-    padding: 0 0.5rem;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  .bb--illustration--logo,
-  .bb--illustration--fromBook {
-    display: none;
-  }
   /* MAP SECTION */
   #map {
     width: 90%;
@@ -238,17 +224,16 @@
   .review {
     width: 40rem;
   }
-  .bill-board {
-    margin: 10rem 0;
-  }
-  .bb--img {
-    border-radius: 5%;
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.03);
-    border: none;
-    padding: 0 1rem;
-    width: 100vw;
-  }
+  /*  BB */
 
+  .bb-img {
+    border: solid #fbc895 4px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.03);
+  }
+  .bb-location {
+    text-align: center;
+    font-size: 1.4rem;
+  }
   /* MAP SECTION
  */
 
@@ -292,6 +277,9 @@
     width: 300%;
   }
   /* ABOUT BOOK SECTION */
+  .about-book-container {
+    margin-top: 10rem;
+  }
   .step-text-box {
     padding: 0 8rem;
   }
@@ -324,15 +312,19 @@
     font-weight: 500;
     font-size: 1.4rem;
   }
+  /* BB */
   .bill-board {
-    margin: 0 0 10rem 0;
-  }
-  .bb--img {
-    border-radius: 5%;
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.03);
-    border: none;
     padding: 0 0.5rem;
-    max-width: 100vw;
+  }
+  .bb-img {
+    width: 100%;
+
+    border: none;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.03);
+  }
+  .bb-location {
+    text-align: center;
+    font-size: 1.5rem;
   }
   .bb-location span {
     display: none;

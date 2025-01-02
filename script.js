@@ -113,12 +113,14 @@ const arrowBtns = document.querySelectorAll(".arrows");
 const firstReviewWidth = carousel.querySelector(".review").offsetWidth;
 const nextArrow = carousel.querySelector(".arrow--right");
 const prevArrow = carousel.querySelector(".arrow--left");
+const reviewsList = document.querySelectorAll(".reviews .review");
 arrowBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     carousel.scrollLeft +=
       btn.id === "left" ? -firstReviewWidth : firstReviewWidth;
   });
 });
+
 // TODO
 // removing and adding arrows
 // MAP SECTION
