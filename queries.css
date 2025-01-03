@@ -11,7 +11,7 @@
     justify-content: center;
   }
   .sticky .header-section {
-    padding: 5rem 0;
+    padding: 0rem 0;
   }
 
   /* HERO SECTION */
@@ -29,25 +29,31 @@
     margin-top: 2rem;
   }
   /* ABOUT BOOK SECTION */
-
+  .heading-secondary {
+    line-height: 5rem;
+  }
   .about-book-container {
     grid-template-columns: none;
     grid-auto-flow: row;
     justify-content: center;
   }
+  .about-book-container .step-1-img-box {
+    margin-bottom: 5rem;
+  }
   .top-woman-img {
-    width: 50%;
+    width: 100%;
   }
   .step-1-img-box {
     justify-content: center;
-    grid-row: 1;
+    grid-row: 2;
+  }
+  .step-2-img-box {
+    grid-row: 4;
   }
   .dancing-woman-img {
     width: 50%;
   }
-  .step-text-box {
-    text-align: center;
-  }
+
   /* TESTIMONIALS SECTION */
   /* TODO */
   .testimonials-container {
@@ -67,9 +73,11 @@
     grid-auto-flow: row;
     gap: 10rem;
   }
+  .author {
+    grid-row: 2;
+  }
   .author-img {
     grid-area: 2;
-    max-width: 100%;
   }
   .about-text {
     font-size: 2rem;
@@ -203,6 +211,10 @@
   .section-about-book {
     margin-bottom: 10rem;
   }
+  /* ABOUT AUTHOR */
+  .author-img {
+    max-width: 100%;
+  }
   /* SCROLLER IMAGES */
   .scroller-img {
     width: 18rem;
@@ -267,7 +279,7 @@
   }
   /* HERO SECTION */
   .heading-primary {
-    font-size: 5rem;
+    font-size: 6rem;
     line-height: 5rem;
   }
   .hero-description {
@@ -284,7 +296,6 @@
     padding: 0 8rem;
   }
   .heading-secondary {
-    line-height: 6rem;
     padding-bottom: 2rem;
   }
   .step-1-img-box {
@@ -334,7 +345,6 @@
   .text-box {
     width: 30rem;
     padding: 0 1rem;
-    text-align: center;
   }
   /* SCROLLER IMAGES */
   .scroller-img {
@@ -348,7 +358,13 @@
     font-size: 1.5rem;
   }
   /* MAP SECTION  */
-
+  .map-text-container {
+    text-align: left;
+    width: 30rem;
+  }
+  .map-text-container .map-text--paragraf:nth-child(2) {
+    margin-bottom: 1rem;
+  }
   /* CTA SECTION */
   .cta-container .heading-secondary {
     font-size: 4rem;

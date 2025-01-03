@@ -1,4 +1,6 @@
 User-agent: *
 Disallow: /Images/Hocu-knjigu-logo/Logo-brush.png
-Disallow: /Images/Mockup/book(dark).png
-Disallow: /Images/Mockup/book(dark).webp
+Disallow: /Images/Mockup/book(dark2).png
+Disallow: /Images/Mockup/book(dark2).webp
+Disallow: /Images/Nera/NeraWithBackground.webp
+Disallow: /Images/Nera/NeraWithBackground.png

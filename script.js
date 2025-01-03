@@ -133,7 +133,7 @@ const markers = [
     locationName: "Arena Zagreb",
     lat: 45.770901943922325,
     lng: 15.939271106921442,
-    address: "Ul. Vice Vukova 6, 10000, Zagreb",
+    address: `<a target="_blank" href="https://maps.app.goo.gl/hVotGuPvUJxj73ZD9"> Ul. Vice Vukova 6, 10000, Zagreb</a>`,
     workingHours: `<strong>Radno vrijeme:</strong><br>
                    ponedjeljak-nedjelja od 9:00 do 21:00<br>
                    popis radnih nedjelja možete vidjeti <a target="_blank" href="https://www.hocuknjigu.hr/radne-nedjelje-u-hocu-knjigu-knjizarama">ovdje</a>`,
@@ -142,7 +142,7 @@ const markers = [
     locationName: "City Centar One East -Zagreb",
     lat: 45.80271689482512,
     lng: 16.05064119699203,
-    address: "Slavonska Avenija 11d, 10000, Zagreb",
+    address: `<a target="_blank" href="https://maps.app.goo.gl/W5qp4qLLsySnvU6L7">Slavonska Avenija 11d, 10000, Zagreb</a>`,
     workingHours: `<strong>Radno vrijeme:</strong><br>
                    ponedjeljak-nedjelja od 9:00 do 21:00<br>
                    popis radnih nedjelja možete vidjeti <a target="_blank" href="https://www.hocuknjigu.hr/radne-nedjelje-u-hocu-knjigu-knjizarama">ovdje</a>`,
@@ -151,7 +151,7 @@ const markers = [
     locationName: "City Centar One West -Zagreb",
     lat: 45.79937520926983,
     lng: 15.883985454661627,
-    address: "Jankomir 33, 10000, Zagreb",
+    address: `<a target="_blank" href="https://maps.app.goo.gl/kCMii7cuoToAsQ1bA">Jankomir 33, 10000, Zagreb</a>`,
     workingHours: `<strong>Radno vrijeme:</strong><br>
                    ponedjeljak-nedjelja od 9:00 do 21:00<br>
                    popis radnih nedjelja možete vidjeti <a target="_blank" href="https://www.hocuknjigu.hr/radne-nedjelje-u-hocu-knjigu-knjizarama">ovdje</a>`,
@@ -160,20 +160,12 @@ const markers = [
     locationName: "Supernova Buzin -Zagreb",
     lat: 45.755487372288705,
     lng: 15.987564369999244,
-    address: "Av. Većeslava Holjevca 62, 10010, Buzin, Zagreb",
+    address: `<a target="_blank" href="https://maps.app.goo.gl/tEMoqJxNZrCFhw1d6">Av. Većeslava Holjevca 62, 10010, Buzin, Zagreb</a>`,
     workingHours: `<strong>Radno vrijeme:</strong><br>
-    Ponedjeljak-nedjelja od 9:00 do 21:00<br>
-    popis radnih nedjelja možete vidjeti <a target="_blank" href="https://www.hocuknjigu.hr/radne-nedjelje-u-hocu-knjigu-knjizarama">ovdje</a>`,
+                   ponedjeljak-nedjelja od 9:00 do 21:00<br>
+                   popis radnih nedjelja možete vidjeti <a target="_blank" href="https://www.hocuknjigu.hr/radne-nedjelje-u-hocu-knjigu-knjizarama">ovdje</a>`,
   },
-  {
-    locationName: "Buzin Supernova -Zagreb",
-    lat: 45.83615984477321,
-    lng: 16.04624933932366,
-    address: " Av. Većeslava Holjevca 62, 10010, Buzin",
-    workingHours: `<strong>Radno vrijeme:</strong><br>
-    Ponedjeljak-nedjelja od 9:00 do 21:00<br>
-    popis radnih nedjelja možete vidjeti <a target="_blank" href="https://www.hocuknjigu.hr/radne-nedjelje-u-hocu-knjigu-knjizarama">ovdje</a>`,
-  },
+
   // {
   //   locationName: "Supernova Garden Mall -Zagreb",
   //   lat: 45.83615984477321,
@@ -183,21 +175,21 @@ const markers = [
   //   Ponedjeljak-nedjelja od 9:00 do 21:00<br>
   //   popis radnih nedjelja možete vidjeti <a target="_blank" href="https://www.hocuknjigu.hr/radne-nedjelje-u-hocu-knjigu-knjizarama">ovdje</a>`,
   // },
-  {
-    locationName: "Hoću knjigu webshop -Zagreb",
-    lat: 45.755487372288705,
-    lng: 15.987564369999244,
-    address: "Sveti Duh 6, Zagreb",
-    workingHours: `<strong>Radno vrijeme:</strong><br>
-    Ponedjeljak-petak od 7:00 do 15:00<br>
-    <a target="_blank" href="https://www.hocuknjigu.hr/proizvodi/knjige/publicistika/popularna-psihologija/energija-djetetove-proslosti">web-shop</a>`,
-  },
+  // {
+  //   locationName: "Hoću knjigu webshop -Zagreb",
+  //   lat: 45.755487372288705,
+  //   lng: 15.987564369999244,
+  //   address: `<a target="_blank" href="https://maps.app.goo.gl/cLguhnH4Sj5GSVcKA">Sveti Duh 6, Zagreb</a>`,
+  //   workingHours: `<strong>Radno vrijeme:</strong><br>
+  //   Ponedjeljak-petak od 7:00 do 15:00<br>
+  //   <a target="_blank" href="https://www.hocuknjigu.hr/proizvodi/knjige/publicistika/popularna-psihologija/energija-djetetove-proslosti">web-shop</a>`,
+  // },
   // VARAZDIN
   {
     locationName: "Centar grada -Varaždin",
     lat: 46.30969731919252,
     lng: 16.337412133166023,
-    address: "Ul. Ljudevita Gaja 17-42 000, 42000, Varaždin",
+    address: `<a target="_blank" href="https://maps.app.goo.gl/dDDNTY8xpVL34y7WA">Ul. Ljudevita Gaja 17-42 000, 42000, Varaždin</a>`,
     workingHours: `<strong>Radno vrijeme:</strong><br>
     Ponedjeljak-petak od 7:00 do 14:00<br>
     Subota od 8:00 do 20:00<br>
@@ -218,7 +210,7 @@ Nedjelja - ne radi`,
     locationName: "Max City centar -Pula",
     lat: 44.86047896895157,
     lng: 13.824885441126407,
-    address: "Stoja 14A, 52100, Pula",
+    address: `<a target="_blank" href="https://maps.app.goo.gl/BwGVdqnehWpNjsLx7">Stoja 14A, 52100, Pula</a>`,
     workingHours: `<strong>Radno vrijeme:</strong><br>
     Ljetno (20.5.-8.9.) ponedjeljak-nedjelja od 9:00 do 22:00<br>
     Zimsko (9.9.-19.5.) ponedjeljak-nedjelja od 9:00 do 21:00<br>
@@ -229,7 +221,7 @@ Nedjelja - ne radi`,
     locationName: "Tower Center -Rijeka",
     lat: 45.31742524688753,
     lng: 14.469384083475898,
-    address: "Pećine 81A, Janka Polića Kamova, 51000, Rijeka",
+    address: `<a target="_blank" href="https://maps.app.goo.gl/USWsig5Jyzz9MnMdA">Pećine 81A, Janka Polića Kamova, 51000, Rijeka</a>`,
     workingHours: `<strong>Radno vrijeme:</strong><br>
    ponedjeljak-nedjelja od 9:00 do 21:00<br>
     popis radnih nedjelja možete vidjeti <a target="_blank" href="https://www.hocuknjigu.hr/radne-nedjelje-u-hocu-knjigu-knjizarama">ovdje</a>`,
@@ -239,7 +231,7 @@ Nedjelja - ne radi`,
     locationName: "Supernova -Zadar",
     lat: 44.116543836505045,
     lng: 15.271730339251087,
-    address: "Ul. Akcije Maslenica 1-23 000, 23000, Zadar",
+    address: `<a target="_blank" href="https://maps.app.goo.gl/FytiYYv633Dq1sPo6">Ul. Akcije Maslenica 1-23 000, 23000, Zadar</a>`,
     workingHours: `<strong>Radno vrijeme:</strong><br>
    ponedjeljak-nedjelja od 9:00 do 21:00<br>
     popis radnih nedjelja možete vidjeti <a target="_blank" href="https://www.hocuknjigu.hr/radne-nedjelje-u-hocu-knjigu-knjizarama">ovdje</a>`,
@@ -249,7 +241,7 @@ Nedjelja - ne radi`,
     locationName: "Trgovacki centar Joker -Split",
     lat: 43.519987639482906,
     lng: 16.447115192813282,
-    address: "Put Brodarice 6, 21 000 Split",
+    address: `<a target="_blank" href="https://maps.app.goo.gl/u28qhfQFzHtF34sf7">Put Brodarice 6, 21 000 Split</a>`,
     workingHours: `<strong>Radno vrijeme:</strong><br>
     ponedjeljak-nedjelja od 9:00 do 21:00<br>
                    popis radnih nedjelja možete vidjeti <a target="_blank" href="https://www.hocuknjigu.hr/radne-nedjelje-u-hocu-knjigu-knjizarama">ovdje</a>`,
@@ -258,7 +250,7 @@ Nedjelja - ne radi`,
     locationName: "City Center One -Split",
     lat: 43.51390947745783,
     lng: 16.501832542914567,
-    address: "Vukovarska ul. 207, 21000, Split",
+    address: `<a target="_blank" href="https://maps.app.goo.gl/exzUKtkgHZTMRN7M6">Vukovarska ul. 207, 21000, Split</a>`,
     workingHours: `<strong>Radno vrijeme:</strong><br>
     Ljetno (20.5.-8.9.)
                    ponedjeljak-nedjelja od 9:00 do 22:00<br>

@@ -74,6 +74,7 @@ body {
 }
 
 /* MOBILE NAVIGATION */
+
 .mobile-navigation-button {
   border: none;
   background: none;
@@ -225,9 +226,7 @@ body {
   justify-self: center;
   margin-bottom: 0rem;
 }
-.about-book-container .step-text-box:first-child {
-  margin-bottom: 20rem;
-}
+
 .step-1-img-box,
 .step-1-img-box picture,
 .step-2-img-box,
@@ -249,8 +248,8 @@ body {
   position: absolute;
   background-color: #cacde5;
   transform: translateX(10rem);
-  padding-bottom: 60%;
-  width: 60%;
+  padding-bottom: 70%;
+  width: 70%;
   z-index: -2;
 }
 .step-2-img-box::after {
@@ -266,7 +265,7 @@ body {
   z-index: -2;
 }
 .top-woman-img {
-  width: 60%;
+  width: 90%;
   height: auto;
 }
 .dancing-woman {
@@ -655,6 +654,9 @@ body {
 .site-map {
   list-style: none;
   font-size: 2rem;
+}
+.site-map-item {
+  line-height: 3rem;
 }
 .site-map-item a:link,
 .site-map-item a:visited {
