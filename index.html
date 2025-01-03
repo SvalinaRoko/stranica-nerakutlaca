@@ -20,12 +20,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      defer
       href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap"
       rel="stylesheet"
     />
     <link href="style.css" rel="stylesheet" />
     <link href="/general.css" rel="stylesheet" />
-    <link href="/queries.css" rel="stylesheet" />
+    <link defer href="/queries.css" rel="stylesheet" />
     <script
       defer
       src=" https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
@@ -118,6 +119,7 @@
                 class="left-img"
                 src="./Images/Illustrations/FromBook/9.1.webp"
                 alt="A illustration from the book Energija djetetove prošlosti"
+                fetchpriority="low"
                 width="1270"
                 height="1245"
               />
@@ -146,6 +148,7 @@
                 class="right-img"
                 src="./Images/Illustrations/FromBook/31.1.webp"
                 alt="A illustration from the book Energija djetetove prošlosti"
+                fetchpriority="low"
                 width="1222"
                 height="1418"
               />
@@ -835,6 +838,7 @@
     </footer>
     <script defer src="/script.js"></script>
     <script
+      defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLsomQYUmTtvaGiMHBlExnPDJnB7Dws3k&loading=async&libraries=maps&v=beta&callback=initMap"
       defer
     ></script>
