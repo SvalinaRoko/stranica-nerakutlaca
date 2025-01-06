@@ -108,6 +108,8 @@ allLinks.forEach(function (link) {
   });
 });
 // CAROUSEL
+// TODO
+// removing and adding arrows
 const carousel = document.querySelector(".reviews");
 const arrowBtns = document.querySelectorAll(".arrows");
 const firstReviewWidth = carousel.querySelector(".review").offsetWidth;
@@ -120,13 +122,11 @@ arrowBtns.forEach((btn) => {
       btn.id === "left" ? -firstReviewWidth : firstReviewWidth;
   });
 });
-
-// TODO
-// removing and adding arrows
 // MAP SECTION
 let map;
 
-const croatiaLatLng = { lat: 44.76843149597141, lng: 16.821158701981076 };
+// const croatiaLatLng = { lat: 44.76843149597141, lng: 16.821158701981076 };
+const croatiaLatLng = { lat: 44.64870913611365, lng: 15.384310294474885 };
 const markers = [
   // ZAGREB
   {

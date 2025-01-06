@@ -59,7 +59,12 @@ https://www.uifaces.co/
 
 ## 04 SHADOWS:
 
+rgba(0,0,0,0.05)
+rgba(0,0,0,0.03)
+
 ## 05 BORDER RADIUS:
+
+2rem
 
 ## 06 WHITE SPACE:
 

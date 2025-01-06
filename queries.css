@@ -12,6 +12,7 @@
   }
   .sticky .header-section {
     padding: 0rem 0;
+    height: 10rem;
   }
 
   /* HERO SECTION */
@@ -55,7 +56,7 @@
   }
 
   /* TESTIMONIALS SECTION */
-  /* TODO */
+
   .testimonials-container {
     margin-bottom: 10rem;
   }
@@ -165,6 +166,9 @@
   }
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
+  }
+  .sticky .header-section {
+    height: 8rem;
   }
   /* MOBILE NAVIGATION */
   .mobile-navigation-button {
@@ -359,7 +363,7 @@
     margin-right: 1rem;
   }
   .book-promotion-location {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.8);
     font-size: 1.5rem;
   }
   /* MAP SECTION  */
