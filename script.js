@@ -23,7 +23,7 @@ menuBtn.addEventListener("click", function () {
   body.classList.remove("scroll-enable");
 });
 
-// OMOGUĆI SCROLL
+// ENABLE SCROLL
 closeBtn.addEventListener("click", function () {
   body.classList.remove("scroll-disabled");
   body.classList.add("scroll-enable");
@@ -108,20 +108,21 @@ allLinks.forEach(function (link) {
   });
 });
 // CAROUSEL
-// TODO
-// removing and adding arrows
 const carousel = document.querySelector(".reviews");
 const arrowBtns = document.querySelectorAll(".arrows");
 const firstReviewWidth = carousel.querySelector(".review").offsetWidth;
 const nextArrow = carousel.querySelector(".arrow--right");
 const prevArrow = carousel.querySelector(".arrow--left");
 const reviewsList = document.querySelectorAll(".reviews .review");
+const lastTestimonial = document.getElementById(".last-testimonial");
 arrowBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     carousel.scrollLeft +=
       btn.id === "left" ? -firstReviewWidth : firstReviewWidth;
   });
 });
+// TODO
+// Remove arrows
 // MAP SECTION
 let map;
 
