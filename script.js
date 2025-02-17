@@ -122,7 +122,7 @@ arrowBtns.forEach((btn) => {
   });
 });
 // TODO
-// Remove arrows
+// Remove arrowslivew`
 // MAP SECTION
 let map;
 
