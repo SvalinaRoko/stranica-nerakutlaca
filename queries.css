@@ -224,6 +224,10 @@
   .author-img {
     max-width: 100%;
   }
+  .text-box {
+    width: 42rem;
+    padding: 0 2rem;
+  }
   /* SCROLLER IMAGES */
   .scroller-img {
     width: 18rem;
