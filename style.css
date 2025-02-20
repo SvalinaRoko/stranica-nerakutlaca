@@ -11,7 +11,7 @@ html {
 body {
   background-color: #f9f3df;
   color: #1a305e;
-  font-family: 'Eczar', serif;
+  font-family: "Eczar", serif;
   font-weight: 400;
   font-size: 1.8rem;
   max-width: 100vw;
@@ -87,7 +87,7 @@ body {
   width: 4.8rem;
   fill: #1a305e;
 }
-.icon-mobile-nav[name='close-outline'] {
+.icon-mobile-nav[name="close-outline"] {
   display: none;
 }
 
@@ -209,7 +209,7 @@ body {
 }
 
 .step-1-img-box::before {
-  content: '';
+  content: "";
   display: block;
 
   border-radius: 50%;
@@ -221,7 +221,7 @@ body {
   z-index: -2;
 }
 .step-2-img-box::after {
-  content: '';
+  content: "";
   display: block;
 
   border-radius: 50%;
@@ -398,7 +398,14 @@ body {
   align-items: center;
 }
 .text-box {
-  width: 42rem;
+  width: 52rem;
+}
+.about-text p:nth-child(2) {
+  margin: 0.7rem 0;
+}
+.quate {
+  margin-top: 2rem;
+  font-weight: 500;
 }
 .author-img {
   max-width: 60rem;
@@ -419,7 +426,7 @@ body {
 .section-book-promotion .scroller:nth-child(3) {
   margin-bottom: 20rem;
 }
-.scroller[data-animated='true'] {
+.scroller[data-animated="true"] {
   overflow: hidden;
   -webkit-mask: linear-gradient(
     90deg,
@@ -436,23 +443,23 @@ body {
     transparent
   );
 }
-.scroller[data-animated='true'] .scroller--inner {
+.scroller[data-animated="true"] .scroller--inner {
   width: max-content;
   flex-wrap: nowrap;
   animation: scroll var(--_animation-duration, 40s)
     var(--_animation-direction, forwards) linear infinite;
 }
-.scroller[data-direction='right'] {
+.scroller[data-direction="right"] {
   --_animation-direction: reverse;
 }
-.scroller[data-direction='left'] {
+.scroller[data-direction="left"] {
   --_animation-direction: forwards;
 }
 /* At query of 620px and below the "slow" animation speed is 120s*/
-.scroller[data-speed='slow'] {
+.scroller[data-speed="slow"] {
   --_animation-duration: 70s;
 }
-.scroller[data-speed='fast'] {
+.scroller[data-speed="fast"] {
   --_animation-duration: 20s;
 }
 .scroller--inner {
